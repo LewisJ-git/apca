@@ -136,7 +136,7 @@ impl ListReqInit {
 }
 
 /// A market data bar as returned by the /v2/stocks/{symbol}/bars endpoint.
-#[derive(Clone, Debug, Deserialize, Eq, PartialEq)]
+#[derive(Clone, Debug, Deserialize, Eq, PartialEq, Default)]
 pub struct Bar {
     /// The beginning time of this bar.
     #[serde(rename = "t")]
